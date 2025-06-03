@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ad-config
+data:
+  ads: |
+    [{"text": "Free shipping on NKP!", "url": "/products/1"},
+     {"text": "CI/CD with GitHub!", "url": "/products/2"}]
