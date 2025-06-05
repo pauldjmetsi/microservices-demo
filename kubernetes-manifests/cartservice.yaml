@@ -115,7 +115,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: redis:alpine
+        image: gcr.io/google_containers/redis:latest
         ports:
         - containerPort: 6379
         readinessProbe:
