@@ -722,7 +722,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: gcr.io/google-containers/busybox:1.28
+        image: bitnami/busybox:latest
         env:
         - name: FRONTEND_ADDR
           value: "frontend:80"
