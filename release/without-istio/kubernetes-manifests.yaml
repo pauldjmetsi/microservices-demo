@@ -722,7 +722,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: busybox:latest
+        image: gcr.io/google-containers/busybox:1.28
         env:
         - name: FRONTEND_ADDR
           value: "frontend:80"
