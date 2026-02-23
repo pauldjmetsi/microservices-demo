@@ -27,6 +27,7 @@ spec:
     metadata:
       labels:
         app: productcatalogservice
+        version: v1
     spec:
       serviceAccountName: productcatalogservice
       terminationGracePeriodSeconds: 5
