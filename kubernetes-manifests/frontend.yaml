@@ -22,7 +22,6 @@ spec:
   selector:
     matchLabels:
       app: frontend
-      version: v1
   template:
     metadata:
       labels:
