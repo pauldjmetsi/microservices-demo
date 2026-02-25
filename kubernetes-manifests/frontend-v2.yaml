@@ -15,19 +15,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: frontend
+  name: frontend-v2
   labels:
     app: frontend
 spec:
   selector:
     matchLabels:
       app: frontend
-      version: v1
+      version: v2
   template:
     metadata:
       labels:
         app: frontend
-        version: v1
+        version: v2
       annotations:
         sidecar.istio.io/rewriteAppHTTPProbers: "true"
     spec:
@@ -95,7 +95,7 @@ spec:
           # - name: ENABLE_ASSISTANT
           #   value: "true"
           - name: FRONTEND_MESSAGE
-            value: "Welcome to NKP demo version 1"
+            value: "Welcome to NKP demo version 2"
           # As part of an optional Google Cloud demo, you can run an optional microservice called the "packaging service".
           # - name: PACKAGING_SERVICE_URL
           #   value: "" # This value would look like "http://123.123.123"
